@@ -1,17 +1,17 @@
 <template>
   <div>
     <div class="left-padding">
-      <img class="logo" src="../assets/logo.png">
+      <img class="logo" src="../assets/logo.png" />
       <div class="flex icon-field" @click="$router.push('/home')">
-        <img class="icon" src="../assets/home.png">
+        <img class="icon" src="../assets/home.png" />
         <p>ホーム</p>
       </div>
-      <div class="flex icon-field" @click="$router.push('?profile')">
-        <img class="icon" src="../assets/profile.png">
+      <div class="flex icon-field" @click="$router.push('/profile')">
+        <img class="icon" src="../assets/profile.png" />
         <p>プロフィール</p>
       </div>
       <div class="flex icon-field" @click="$store.dispatch('logout')">
-        <img class="icon" src="../assets/logout.png">
+        <img class="icon" src="../assets/logout.png" />
         <p>ログアウト</p>
       </div>
     </div>
@@ -21,32 +21,32 @@
 
 <script>
 import ShareMessage from "../components/ShareMessage";
-export default{
-  components:{
+export default {
+  components: {
     ShareMessage
   }
 };
 </script>
 
 <style scoped>
-.left-padding{
-  margin:20px;
+.left-padding {
+  margin: 20px;
 }
-.flex{
-  display:flex;
+.flex {
+  display: flex;
 }
-.logo{
-  width:100px;
+.logo {
+  width: 100px;
 }
-.icon-field{
-  margin-top:15px;
-  cursor:pointer;
+.icon-field {
+  margin-top: 15px;
+  cursor: pointer;
 }
-.icon{
-  width:25px;
+.icon {
+  width: 25px;
 }
-.icon-field p{
-  font-size:16px;
-  padding-left:15px;
+.icon-field p {
+  font-size: 16px;
+  padding-left: 15px;
 }
 </style>
